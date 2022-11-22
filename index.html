@@ -9,7 +9,7 @@
       type="imagem/x-icon"
       href="/img/icon-scrash.png"
     />
-    <title>Liu-Terry</title>
+    <title>LiuTerry</title>
 
     <link
       rel="stylesheet"
@@ -33,17 +33,44 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="separador"></div>
     <div class="container-site">
       <aside>
-        <img src="./img/icon-scrash.png" alt="icone" />
-        <ul>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-        </ul>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <!-- <img src="./img/icon-scrash.png" id="btn" alt="" /> -->
+          <i class="fas fa-bars" id="btn"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+          <header>meu menu</header>
+          <ul>
+            <li>
+              <a href="#" class="active">
+                <span>opa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>opa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>opa</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </aside>
       <div class="conteudo">
         <div class="descricao">
@@ -79,6 +106,20 @@
         <div class="areas-externas">
           <button class="saiba-mais">saiba +</button>
           <button class="contato">contatos</button>
+        </div>
+        <!-- contatos -->
+
+        <div class="card-contatos">
+          <input type="text" placeholder="Nome" />
+          <input type="text" placeholder="E-mail" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Mensagem"
+          ></textarea>
+          <button>Enviar</button>
         </div>
 
         <div class="lista-musicas">

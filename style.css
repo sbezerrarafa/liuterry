@@ -4,19 +4,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #222630;
 }
-
+.separador {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid white;
+}
 .container-site {
   display: flex;
   background-color: #222630;
   color: #fff;
 }
 aside {
-  width: 200px;
+  width: 400px;
   background: transparent;
 }
+aside label {
+  position: fixed;
+}
 aside img {
-  width: 50%;
+  width: 100px;
 }
 .conteudo {
   max-width: 960px;
@@ -37,6 +45,32 @@ aside img {
 .apresentacao .destaque {
   color: #4cc94b;
 }
+
+.card-contatos {
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 100px;
+  gap: 20px;
+}
+.card-contatos input {
+  background: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.card-contatos textarea {
+  background: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+.card-contatos button {
+  background: #4cc94b;
+}
+
 .redes-sociais ul {
   margin: 40px 0;
   display: flex;
@@ -90,7 +124,7 @@ button {
   margin-top: 15px;
 }
 .lista-musicas h3 {
-  font-size: 54px;
+  font-size: 48px;
 }
 
 footer {
@@ -102,3 +136,115 @@ footer img {
   object-fit: cover;
   height: 200px;
 }
+
+/* menu */
+
+.sidebar {
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background: transparent;
+  transition: all 0.5s ease;
+}
+.sidebar header {
+  font-size: 28px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+}
+.sidebar a {
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 5px solid transparent;
+  transition: all 0.5s ease;
+}
+
+a.active,
+a.hover {
+  border-left: 5px solid #593632;
+}
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 28px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 45px;
+  transition: all 0.5s ease;
+}
+
+label #cancel {
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel {
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 600px) {
+  .descricao {
+    flex-wrap: wrap;
+  }
+}
+/* @media (max-width: 860px) {
+  .sidebar {
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,
+  #btn,
+  #cancel {
+    display: none;
+  }
+}
+span {
+  position: absolute;
+  margin-left: 23px;
+  opacity: 0;
+  visibility: hidden;
+}
+.sidebar a {
+  height: 60px;
+}
+.sidebar a i {
+  margin-left: -10px;
+}
+a:hover {
+  width: 200px;
+  background: inherit;
+}
+.sidebar a:hover span {
+  opacity: 1;
+  visibility: visible;
+} */
