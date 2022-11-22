@@ -40,6 +40,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="separador"></div>
@@ -52,21 +58,21 @@
           <i class="fas fa-times" id="cancel"></i>
         </label>
         <div class="sidebar">
-          <header>meu menu</header>
+          <header>Dj LiuTerry</header>
           <ul>
             <li>
-              <a href="#" class="active">
-                <span>opa</span>
+              <a href="https://linktr.ee/Liuterry" class="active">
+                <span>Play-Lists</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <span>opa</span>
+                <span>Sobre</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <span>opa</span>
+                <span>Contato</span>
               </a>
             </li>
           </ul>
@@ -76,8 +82,8 @@
         <div class="descricao">
           <img src="/img/dog.png" alt="img-principal" />
           <div class="apresentacao">
-            <h2>Liu</h2>
-            <h2 class="destaque">Terry</h2>
+            <h2>Liu<span class="destaque">Terry</span></h2>
+
             <p>
               Sonny Moore, also known by his name Skrillex, is an American DJ
               who specializes more in Dubstep, EDM, electro house, and
@@ -88,6 +94,14 @@
               super-hits like Bangarang, First of the year (Equinox), Scary
               Monsters, and Nice Sprites.
             </p>
+            <img class="img-disco" src="./img/disco.gif" alt="" />
+            <audio
+              src="./assets/tranquilo-liuterry.mp3"
+              preload="auto"
+              controls
+              autoplay
+              loop
+            ></audio>
           </div>
         </div>
         <div class="redes-sociais">
@@ -180,8 +194,14 @@
         </div>
       </div>
     </div>
-    <footer>
-      <img src="./img/img-footer.jpg" alt="" />
+    <footer class="footer">
+      <div class="creditos">
+        <p>
+          Todos Direitos reservados
+          <a href="https://github.com/sbezerrarafa">sbezerra</a>
+        </p>
+      </div>
+      <img src="./img/img-footer.jpg" alt="imagem-footer" />
     </footer>
   </body>
 </html>
