@@ -196,7 +196,7 @@
                 <li class="carousel__slide">
                   <figure>
                     <div>
-                      <img src="./img/6.jpg" alt="" />
+                      <img src="./img/7.jpg" alt="" />
                     </div>
                     <figcaption>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -222,7 +222,7 @@
                   <label for="slide-5"><img src="./img/5.jpg" alt="" /></label>
                 </li>
                 <li>
-                  <label for="slide-6"><img src="./img/6.jpg" alt="" /></label>
+                  <label for="slide-6"><img src="./img/7.jpg" alt="" /></label>
                 </li>
               </ul>
             </div>
@@ -235,10 +235,15 @@
           action="https://formsubmit.co/sbezerra.rafa@gmail.com"
           method="POST"
         >
-          <input type="text" placeholder="Nome" />
-          <input type="text" placeholder="E-mail" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/sucesso.html"
+          />
+          <input type="text" name="nome" placeholder="Nome" />
+          <input type="email" name="email" placeholder="E-mail" />
           <textarea
-            name=""
+            name="Mensagem"
             id=""
             cols="30"
             rows="10"
