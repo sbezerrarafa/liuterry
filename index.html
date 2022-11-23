@@ -115,12 +115,44 @@
             <li>
               <a href=""><img src="/img/spotify.svg" alt="" /></a>
             </li>
+            <li>
+              <a href=""><img src="/img/youtube.svg" alt="" /></a>
+            </li>
           </ul>
         </div>
         <div class="areas-externas">
           <a class="saiba-mais" href="https://linktr.ee/Liuterry">saiba +</a>
-          <button class="contato">contatos</button>
+          <button
+            type="button"
+            onclick="Mudarestado('contatos')"
+            class="contato"
+          >
+            contatos
+          </button>
         </div>
+        <!-- contatos -->
+        <form
+          id="contatos"
+          class="card-contatos"
+          action="https://formsubmit.co/sbezerra.rafa@gmail.com"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/sucesso.html"
+          />
+          <input type="text" name="nome" placeholder="Nome" />
+          <input type="email" name="email" placeholder="E-mail" />
+          <textarea
+            name="Mensagem"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Mensagem"
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
 
         <!-- carrousel imagens -->
         <section>
@@ -228,29 +260,6 @@
             </div>
           </div>
         </section>
-        <!-- contatos -->
-
-        <form
-          class="card-contatos"
-          action="https://formsubmit.co/sbezerra.rafa@gmail.com"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="_next"
-            value="http://127.0.0.1:5500/sucesso.html"
-          />
-          <input type="text" name="nome" placeholder="Nome" />
-          <input type="email" name="email" placeholder="E-mail" />
-          <textarea
-            name="Mensagem"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Mensagem"
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
 
         <div class="lista-musicas">
           <div class="mais-ouvidas">
@@ -315,9 +324,18 @@
         <p>
           Todos Direitos reservados
           <a href="https://github.com/sbezerrarafa">sbezerra</a>
+          <span>2022</span>
         </p>
       </div>
       <img src="./img/img-footer.jpg" alt="imagem-footer" />
     </footer>
+    <script>
+      function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if (display == 'none') {
+          document.getElementById(el).style.display = 'flex';
+        } else document.getElementById(el).style.display = 'none';
+      }
+    </script>
   </body>
 </html>

@@ -69,6 +69,7 @@ audio {
   flex-direction: column;
   padding: 30px 100px;
   gap: 20px;
+  transition: all 0.5s ease;
 }
 .card-contatos input {
   background: white;
@@ -125,6 +126,7 @@ button,
 .contato {
   border: 1px solid white;
   background: transparent;
+  cursor: pointer;
 }
 .contato:hover {
   text-decoration: underline;
@@ -165,14 +167,16 @@ button,
 .creditos {
   color: white;
   position: absolute;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
   background: transparent;
   z-index: 3;
 }
-.creditos p {
+.creditos p,
+span {
   background: transparent;
 }
+
 .creditos a {
   color: #4cc94b;
   text-decoration: none;
