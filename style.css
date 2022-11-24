@@ -19,7 +19,6 @@
   color: #fff;
 }
 aside {
-  /* width: 400px; */
   background: transparent;
 }
 aside label {
@@ -95,6 +94,9 @@ audio {
 }
 .redes-sociais ul li {
   list-style: none;
+}
+.redes-sociais ul li:hover {
+  transform: scale(1.1);
 }
 .redes-sociais img {
   width: 30px;
@@ -484,6 +486,11 @@ section {
   }
   .carousel {
     max-width: 380px;
+  }
+}
+@media (max-width: 500px) {
+  .conteudo {
+    width: 100%;
   }
 }
 
