@@ -235,8 +235,8 @@ label #cancel {
   border: 1px solid #262626;
   margin: 15px 30px;
   font-size: 28px;
-  height: 60px;
-  width: 60px;
+  height: 45px;
+  width: 40px;
   text-align: center;
   line-height: 45px;
   transition: all 0.5s ease;
